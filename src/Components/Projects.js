@@ -2,7 +2,7 @@ import React from 'react';
 import project1 from '../iamges/project1.png'
 import project2 from '../iamges/project2.png'
 import project3 from '../iamges/project3.png'
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
@@ -26,8 +26,10 @@ const Projects = () => {
                                         <p className="mt-3 text-base text-gray-500">It is a Full-stack Tools Manufacturer Site.
                                             Users can order products, see their own orders, and delete any order. They can confirm the order by payment method which is implemented by Stripe.
                                         </p>
-                                        <a href="https://twitter.com/g_perales" className="block mt-2">
-                                            More Details
+                                        <a href="https://twitter.com/g_perales" className="block mt-2 text-blue-600">
+                                            More Details 
+                                            <FontAwesomeIcon icon={faArrowRight} className="pl-2  "/>
+                                            
                                         </a>
                                     </div>
                                     <div className="flex items-center mt-6">
