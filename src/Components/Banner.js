@@ -2,6 +2,7 @@ import React from 'react';
 import banner from '../iamges/banner.png'
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import pdf from '../Mohammad-Jahid-Resume2.pdf'
 // import bannerMobile from '../../images/home/mobile/image-header.jpg'
 
 const Banner = () => {
@@ -22,12 +23,14 @@ const Banner = () => {
                                     I am a Front-End Web Developer
                                 </h2>
                                 <br />
-                                <button
+                                <a
+                                    href={pdf}
+                                    download="Mohammad-Jahid-Resume"
                                     className="btn btn-outline rounded-none border-slate-50 text-white mt-6"
                                 >
                                     Download Resume
-                                    <FontAwesomeIcon icon={faDownload} className="pl-2  "/>
-                                </button>
+                                    <FontAwesomeIcon icon={faDownload} className="pl-2  " />
+                                </a>
                             </div>
 
                         </div>
