@@ -4,9 +4,12 @@ const About = () => {
     return (
         <div>
             <section class="bg-gray-50 text-gray-600 body-font">
-                <div class="container flex flex-wrap px-5 py-24 mx-auto items-center">
+                <p className='text-gray-600 tracking-[.2rem] uppercase text-base pb-2 pt-20 text-center'>About </p>
+                <h2 className='text-gray-700 text-4xl text-center  font-bold'>Personal Information</h2>
+                <p className='text-gray-700 text-xl text-center mb-4'>Get to know more about me</p>
+                <div class="container flex flex-wrap px-5 py-2 mx-auto items-center">
                     <div class="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-200">
-                        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Hello!</h1>
+                        <h1 class="sm:text-xl text-xl font-medium title-font mb-2 text-gray-900">Hello!</h1>
                         <h2 class="leading-relaxed text-base">My name is Mohammad Jahid and I'm a passionate Front End Web Developer using web technologies to build amazing products and focusing on solving problems for different niches and different industries using the power of technology.
                             <br />
                             I will love to hear from you. Whether it's a project, job opportunity, or just a chat. Feel free to contact me
@@ -42,7 +45,7 @@ const About = () => {
                         <div class="flex flex-wrap list-none -mb-1">
                             <h2 class="rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">React Native</h2>
                             <h2 class="rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">Next Js</h2>
-                            <h2 class="rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">TypeScript</h2>                            
+                            <h2 class="rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">TypeScript</h2>
                         </div>
                         <h2 class="title-font font-semibold text-gray-800 tracking-wider text-sm mb-2 mt-4">TOOLS</h2>
                         <div class="flex flex-wrap list-none -mb-1">
