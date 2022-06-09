@@ -7,7 +7,7 @@ const Contact = () => {
                 <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 ">
                     <div className="py-8 md:py-8 md:px-6">
                         <h1 className="text-4xl font-bold">Say Hello!</h1>
-                        <p className="pt-2 pb-4">Submit the form so I can get back to you as soon possible</p>
+                        <p className="pt-2 pb-4">Submit the form so I can get back to you as soon possible.</p>
                         <div className="space-y-4">
                             <p className="flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6">
