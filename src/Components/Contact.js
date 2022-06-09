@@ -3,11 +3,11 @@ import React from 'react';
 const Contact = () => {
     return (
         <div>
-            <section className="py-6 mt-6 bg-gray-200 text-gray-800">
+            <section className="py-16 mt-6 bg-gray-200 text-gray-800">
                 <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 ">
                     <div className="py-8 md:py-8 md:px-6">
-                        <h1 className="text-4xl font-bold">Get in touch</h1>
-                        <p className="pt-2 pb-4">Fill in the form to start a conversation</p>
+                        <h1 className="text-4xl font-bold">Say Hello!</h1>
+                        <p className="pt-2 pb-4">Submit the form so I can get back to you as soon possible</p>
                         <div className="space-y-4">
                             <p className="flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6">
@@ -43,7 +43,7 @@ const Contact = () => {
                             <span className="mb-1">Message</span>
                             <textarea rows="3" className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-100"></textarea>
                         </label>
-                        <button type="button" className="self-center px-8 py-2 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-primary text-white focus:ring-violet-400 hover:ring-violet-400">Submit</button>
+                        <button type="button" className="self-center px-8 py-2 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-primary text-white ">Submit</button>
                     </form>
                 </div>
             </section>
