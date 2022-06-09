@@ -91,17 +91,11 @@ const Navbar = ({ backgroundHome }) => {
         >
             <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8  ">
                 <div class="flex items-center justify-between">
-                    <a
-                        href="/"
-                        aria-label="Company"
-                        title="Company"
-                        class="inline-flex items-center"
-                    >
-                        <FontAwesomeIcon icon={faHeadphonesSimple} className=" h-10" />
-                        <span class="ml-2 text-2xl tracking-wide font-extrabold">
-                            audiophile
-                        </span>
-                    </a>
+                    <div class="avatar">
+                        <div class="w-12 rounded-full ring ring-slate-600 ring-offset-base-100 ring-offset-2">
+                            <img src="https://api.lorem.space/image/face?hash=3174" />
+                        </div>
+                    </div>
                     <ul class=" items-center hidden space-x-6 lg:flex uppercase">
                         {menuItems}
                     </ul>

@@ -1,0 +1,31 @@
+.nav-bg {
+    background-color: #f8f8f8;
+    transition: all 0.5s ease;
+    /* color: #000; */
+}
+
+.link {
+    text-decoration: none;
+}
+
+.active-link {
+    /* color: orangered; */
+}
+
+.active-link::before {
+    /* font-family: 'Open Sans', sans-serif; */
+    text-decoration: none;
+
+    transition: color ease-in-out 300ms;
+    /* color: #1b4388; */
+    content: " ";
+    position: absolute;
+    /* left: 0; */
+    bottom: 23px;
+    /* bottom: 0; */
+    background-color: crimson;
+    /* color: orange; */
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}

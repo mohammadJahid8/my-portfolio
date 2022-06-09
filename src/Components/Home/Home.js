@@ -5,7 +5,7 @@ import Navbar from '../Navbar';
 const Home = () => {
     return (
         <div>
-            <Navbar />
+            <Navbar backgroundHome="bg-[#030406] text-white" />
             <Banner />
         </div>
     );
