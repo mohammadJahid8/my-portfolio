@@ -2,6 +2,7 @@ import { faHeadphonesSimple } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import jahid from '../iamges/jahid.png'
 import './Navbar.css';
 
 const Navbar = ({ backgroundHome }) => {
@@ -34,7 +35,7 @@ const Navbar = ({ backgroundHome }) => {
 
                     style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 >
-                    Our Portfolio
+                    About
                 </NavLink>
             </li>
             <li>
@@ -44,7 +45,7 @@ const Navbar = ({ backgroundHome }) => {
                     title="Product pricing"
                     style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 >
-                    Our Team
+                    Projects
                 </NavLink>
             </li>
             <li>
@@ -55,7 +56,7 @@ const Navbar = ({ backgroundHome }) => {
                     // class=" tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                     className={({ isActive }) => (isActive ? "active-link" : "link")}
                 >
-                    Contact us
+                    Resume
                 </NavLink>
             </li>
             <li className="">
@@ -66,7 +67,7 @@ const Navbar = ({ backgroundHome }) => {
                     // class=" tracking-wide text-gray-700 transition-colors duration-200 "
                     className={({ isActive }) => (isActive ? "active-link" : "link")}
                 >
-                    Login
+                    Contact
                 </NavLink>
             </li>
         </>
@@ -93,7 +94,7 @@ const Navbar = ({ backgroundHome }) => {
                 <div class="flex items-center justify-between">
                     <div class="avatar">
                         <div class="w-12 rounded-full ring ring-slate-600 ring-offset-base-100 ring-offset-2">
-                            <img src="https://api.lorem.space/image/face?hash=3174" />
+                            <img src={jahid} />
                         </div>
                     </div>
                     <ul class=" items-center hidden space-x-6 lg:flex uppercase">
