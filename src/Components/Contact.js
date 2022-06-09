@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-function sendEmail(e) {
-    e.preventDefault();
-}
 
 const Contact = () => {
+    const form = useRef();
+    function sendEmail(e) {
+        e.preventDefault();
+        emailjs.sendForm('service_v79vr4l', 'template_njoamlj', form.current, 'NH9yD_S7dToEm7aVN')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset();
+    }
     return (
         <div>
             <section className="py-16 mt-6 bg-gray-200 text-gray-800">
@@ -36,11 +44,12 @@ const Contact = () => {
                         </div>
                     </div>
                     <form
+                        ref={form}
                         onSubmit={sendEmail}
                         novalidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
                         <label className="block">
                             <span className="mb-1">Full name</span>
-                            <input type="text" placeholder="Leroy Jenkins" className="py-2 pl-2 block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-100" />
+                            <input type="text" name="from_name" placeholder="Leroy Jenkins" className="py-2 pl-2 block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-100" />
                         </label>
                         <label className="block">
                             <span className="mb-1">Email address</span>
@@ -48,9 +57,9 @@ const Contact = () => {
                         </label>
                         <label className="block">
                             <span className="mb-1">Message</span>
-                            <textarea rows="3" className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-100"></textarea>
+                            <textarea rows="3" name='message' className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-100"></textarea>
                         </label>
-                        <button type="button" className="self-center px-8 py-2 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-primary text-white ">Submit</button>
+                        <button type="submit" className="self-center px-8 py-2 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-primary text-white ">Submit</button>
                     </form>
                 </div>
             </section>
