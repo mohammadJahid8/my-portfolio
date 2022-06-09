@@ -26,7 +26,7 @@ const Banner = () => {
                                     className="btn btn-outline rounded-none border-slate-50 text-white mt-6"
                                 >
                                     Download Resume
-                                    <FontAwesomeIcon icon={faDownload} className="pl-2"/>
+                                    <FontAwesomeIcon icon={faDownload} className="pl-2  "/>
                                 </button>
                             </div>
 
