@@ -27,6 +27,8 @@ const Projects = () => {
                                         <p className="text-xl font-semibold text-neutral-600">Ventrac</p>
                                         <p className="mt-3 text-base text-gray-500">It is a Full-stack Tools Manufacturer Site.
                                             Users can order products, see their own orders, and delete any order. They can confirm the order by payment method which is implemented by Stripe.
+                                            <br />
+                                            Technology Used: React Js, React Router, React Query, Tailwind CSS, Firebase Hooks, Custom Hooks, JWT, Stripe, MongoDB, and Heroku.
                                         </p>
                                         <a href="https://twitter.com/g_perales" className="block mt-2 text-blue-600">
                                             More Details
@@ -49,7 +51,9 @@ const Projects = () => {
                                 <div className="flex flex-col justify-between flex-1 p-6 bg-white">
                                     <div className="flex-1">
                                         <p className="text-xl font-semibold text-neutral-600">Best Electronics</p>
-                                        <p className="mt-3 text-base text-gray-500">is a Full-stack Store Warehouse Site.This site displays some products which can be updated by an Admin. Sellers can add products and see their own products in different routes as well.Applied authentication and created  Mobile  Responsive  User  Experience
+                                        <p className="mt-3 text-base text-gray-500">is a Full-stack Store Warehouse Site.This site displays some products which can be updated by an Admin. Sellers can add products and see their own products in different routes as well.Applied authentication and created  Mobile  Responsive  User  Experience.
+                                            <br />
+                                            Technology Used: React, React Router, React Bootstrap, React Hook Form, Firebase Hooks, Custom Hooks, MongoDB, and Heroku.
                                         </p>
                                         <a href="https://twitter.com/g_perales" className="block mt-2 text-blue-600">
                                             More Details
@@ -71,7 +75,10 @@ const Projects = () => {
                                 <div className="flex flex-col justify-between flex-1 p-6 bg-white">
                                     <div className="flex-1">
                                         <p className="text-xl font-semibold text-neutral-600">Peters Photography</p>
-                                        <p className="mt-3 text-base text-gray-500">is a Personal Photography Site. This site represents a photographer and his services.Users need to Sign/Signup to Checkout any services.	Created mobile  Responsive  User  Experience</p>
+                                        <p className="mt-3 text-base text-gray-500">is a Personal Photography Site. This site represents a photographer and his services.Users need to Sign/Signup to Checkout any services.	Created mobile  Responsive  User  Experience.
+                                            <br />
+                                            Technology Used: React, React Bootstrap, Firebase hooks, Toastify.
+                                        </p>
                                         <a href="https://twitter.com/g_perales" className="block mt-2 text-blue-600">
                                             More Details
                                             <FontAwesomeIcon icon={faArrowRight} className="pl-2  " />
@@ -90,9 +97,10 @@ const Projects = () => {
                                 </div>
                                 <div className="flex flex-col justify-between flex-1 p-6 bg-white">
                                     <div className="flex-1">
-                                        <p className="text-xl font-semibold text-neutral-600">Ventrac</p>
-                                        <p className="mt-3 text-base text-gray-500">It is a Full-stack Tools Manufacturer Site.
-                                            Users can order products, see their own orders, and delete any order. They can confirm the order by payment method which is implemented by Stripe.
+                                        <p className="text-xl font-semibold text-neutral-600">City Hall Convention Center</p>
+                                        <p className="mt-3 text-base text-gray-500">City hall is a convention center. This site is for the visitors to see the events and the speakers.All the event package is displayed in the home page.
+                                            <br />
+                                            Technology Used: Html, css, bootstrap.
                                         </p>
                                         <a href="https://twitter.com/g_perales" className="block mt-2 text-blue-600">
                                             More Details
@@ -115,7 +123,10 @@ const Projects = () => {
                                     <div className="flex-1">
 
                                         <p className="text-xl font-semibold text-neutral-600">Classic Candles</p>
-                                        <p className="mt-3 text-base text-gray-500">Classic Candle is a candle review site. All the reviews of the customer will display in the home page</p>
+                                        <p className="mt-3 text-base text-gray-500">Classic Candle is a candle review site. All the reviews of the customer will display in the home page.
+                                            <br />
+                                            Technology Used: Html, css, bootstrap.
+                                        </p>
 
                                         <a href="https://twitter.com/g_perales" className="block mt-2 text-blue-600">
                                             More Details
