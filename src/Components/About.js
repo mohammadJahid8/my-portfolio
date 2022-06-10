@@ -1,4 +1,20 @@
 import React from 'react';
+import html from '../../src/iamges/logos/html.png';
+import css3 from '../../src/iamges/logos/css3.png';
+import javascript from '../../src/iamges/logos/javascript.png';
+import bootstrap from '../../src/iamges/logos/bootstrap.png';
+import tailwind from '../../src/iamges/logos/tailwind.png';
+import react from '../../src/iamges/logos/react.png';
+import node from '../../src/iamges/logos/node.png';
+import mongodb from '../../src/iamges/logos/mongodb.png';
+import firebase from '../../src/iamges/logos/firebase.png';
+import github from '../../src/iamges/logos/github.png';
+import vs from '../../src/iamges/logos/vs.png';
+import npm from '../../src/iamges/logos/npm.png';
+import netlify from '../../src/iamges/logos/netlify.png';
+import figma from '../../src/iamges/logos/figma.png';
+import postman from '../../src/iamges/logos/postman.png';
+import heroku from '../../src/iamges/logos/heroku.png';
 
 const About = () => {
     return (
@@ -20,48 +36,42 @@ const About = () => {
                             </svg>
                         </a>
                     </div>
-                    <div class="flex flex-col md:w-1/2 md:pl-12">
-                        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 text-center mt-10">My Skills</h1>
-                        <h2 class="title-font font-semibold text-gray-800 tracking-wider text-sm mb-2">EXPERTISE</h2>
-                        <div class="flex flex-wrap list-none -mb-1">
-                            <h2 class="rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">HTML</h2>
-                            <h2 class="rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">CSS</h2>
-                            <h2 class="rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">Bootstrap 5</h2>
-                            <h2 class="rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">Tailwind Css</h2>
-                            <h2 class="rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">JavaScript/ES6</h2>
-                            <h2 class="mt-2 xl:mt-0 rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">React JS</h2>
-                            <h2 class=" xl:mt-0  mt-2 rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">Axios</h2>
-                            <h2 class="mt-2 rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">React Query</h2>
+                    <div class="md:w-1/2 md:pl-12">
+                        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-8 text-gray-900 text-center ">My Skills</h1>
+                        <div className='flex justify-center'>
+                            <div className='md:px-0 px'>
+                                <div className='flex gap-14 lg:gap-20 '>
+                                    <img className='w-10 transform transition duration-500 hover:scale-105' src={html} alt="" />
+                                    <img className='w-10 transform transition duration-500 hover:scale-105' src={css3} alt="" />
+                                    <img className='w-10 transform transition duration-500 hover:scale-105' src={bootstrap} alt="" />
+                                    <img className='w-10 transform transition duration-500 hover:scale-105' src={tailwind} alt="" />
+                                </div>
+                                <div className='flex gap-14 lg:gap-20 mt-4'>
+                                    <img className='w-10 transform transition duration-500 hover:scale-105' src={javascript} alt="" />
+                                    <img className='w-10 transform transition duration-500 hover:scale-105' src={react} alt="" />
+                                    <img className='w-10 transform transition duration-500 hover:scale-105' src={node} alt="" />
+                                    <img className='w-10 transform transition duration-500 hover:scale-105' src={mongodb} alt="" />
+                                </div>
+                                <div className='flex gap-14 lg:gap-20 mt-6'>
+                                    <img className='w-10 transform transition duration-500 hover:scale-105' src={firebase} alt="" />
+                                    <img className='w-10 transform transition duration-500 hover:scale-105' src={heroku} alt="" />
+                                    <img className='w-10 transform transition duration-500 hover:scale-105' src={github} alt="" />
+                                    <img className='w-10 transform transition duration-500 hover:scale-105' src={netlify} alt="" />
+                                </div>
+                                <div className='flex gap-14 lg:gap-20 mt-6'>
+                                    <img className='w-10 transform transition duration-500 hover:scale-105' src={figma} alt="" />
+                                    <img className='w-10 transform transition duration-500 hover:scale-105' src={postman} alt="" />
+                                    <img className='w-10 transform transition duration-500 hover:scale-105' src={vs} alt="" />
+                                    <img className='w-10 transform transition duration-500 hover:scale-105' src={npm} alt="" />
+                                </div>
+
+                            </div>
                         </div>
-                        <h2 class="title-font font-semibold text-gray-800 tracking-wider text-sm mb-2 mt-4">COMFORTABLE</h2>
-                        <div class="flex flex-wrap list-none -mb-1">
-                            <h2 class="rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">Node Js</h2>
-                            <h2 class="rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">Express Js</h2>
-                            <h2 class="rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">MongoDB</h2>
-                            <h2 class="rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">Stripe</h2>
-                            <h2 class="rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">JWT</h2>
-                        </div>
-                        <h2 class="title-font font-semibold text-gray-800 tracking-wider text-sm mb-2 mt-4">FAMILIAR</h2>
-                        <div class="flex flex-wrap list-none -mb-1">
-                            <h2 class="rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">React Native</h2>
-                            <h2 class="rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">Next Js</h2>
-                            <h2 class="rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">TypeScript</h2>
-                        </div>
-                        <h2 class="title-font font-semibold text-gray-800 tracking-wider text-sm mb-2 mt-4">TOOLS</h2>
-                        <div class="flex flex-wrap list-none -mb-1">
-                            <h2 class="rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">VS Code</h2>
-                            <h2 class="rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">Github</h2>
-                            <h2 class="rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">Netlify</h2>
-                            <h2 class="rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">Firebase</h2>
-                            <h2 class="rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">Heroku</h2>
-                            <h2 class="rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">NPM</h2>
-                            <h2 class="mt-2 xl:mt-0 rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">Figma</h2>
-                            <h2 class="mt-2 xl:mt-2 rounded mr-2 bg-gray-200 p-1 text-gray-600 hover:text-gray-800">Postman API</h2>
-                        </div>
+
                     </div>
                 </div>
-            </section>
-        </div>
+            </section >
+        </div >
     );
 };
 

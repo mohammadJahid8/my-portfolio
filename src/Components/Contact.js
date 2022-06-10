@@ -15,7 +15,7 @@ const Contact = () => {
         e.target.reset();
     }
     return (
-        <div>
+        <div id='contact'>
             <section className="py-16 mt-6 bg-gray-200 text-gray-800">
                 <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 ">
                     <div className="py-8 md:py-8 md:px-6">

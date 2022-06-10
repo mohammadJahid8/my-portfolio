@@ -74,15 +74,15 @@ const Navbar = ({ backgroundHome }) => {
                 </NavLink>
             </li>
             <li className="hover:text-[#d87d4a]">
-                <NavLink
-                    to="/contact"
+                <a
+                    href="#contact"
                     aria-label="About us"
                     title="About us"
                     // class=" tracking-wide text-gray-700 transition-colors duration-200 "
                     className={({ isActive }) => (isActive ? "active-link" : "link")}
                 >
                     Contact
-                </NavLink>
+                </a>
             </li>
         </>
     )
