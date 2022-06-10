@@ -29,24 +29,40 @@ const Navbar = ({ backgroundHome }) => {
                 </NavLink>
             </li>
             <li>
-                <NavLink
+                <a
+                    href="#about"
+                    title="Our product"
+
+                    // style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                >
+                    About
+                </a>
+                {/* <NavLink
                     to="/portfolio"
                     title="Our product"
 
                     style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 >
                     About
-                </NavLink>
+                </NavLink> */}
             </li>
             <li>
-                <NavLink
+                <a
+                    href="#projects"
+                    aria-label="Product pricing"
+                    title="Product pricing"
+                // style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                >
+                    Projects
+                </a>
+                {/* <NavLink
                     to="/team"
                     aria-label="Product pricing"
                     title="Product pricing"
                     style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 >
                     Projects
-                </NavLink>
+                </NavLink> */}
             </li>
             <li>
                 <NavLink

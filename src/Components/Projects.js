@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from 'react';
-// import project1 from '../iamges/project1.png'
-// import project2 from '../iamges/project2.png'
-// import project3 from '../iamges/project3.png'
-// import project4 from '../iamges/project4.png'
-// import project5 from '../iamges/project5.png'
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router-dom";
+import useDetail from './useDetail';
 
 
 const Projects = () => {
@@ -25,7 +21,7 @@ const Projects = () => {
 
 
     return (
-        <div>
+        <div id='projects'>
             <section className="bg-gray-50 ">
                 <p className='text-gray-600 tracking-[.2rem] uppercase text-base pb-2 pt-20 text-center'>Works </p>
                 <h2 className='text-gray-700 text-4xl text-center  font-bold'>Latest Projects</h2>
@@ -36,14 +32,14 @@ const Projects = () => {
 
                             {
                                 projects.map(project => <>
-                                    <div className="flex flex-col overflow-hidden rounded-lg shadow-lg" key={project.id}>
+                                    <div className="flex flex-col overflow-hidden rounded-lg shadow-lg mb-6" key={project.id}>
                                         <div className="flex-shrink-0">
-                                            <img className="object-cover w-full h-48" src={project.homeImage} alt="" />
+                                            <img className="object-cover w-full h-full" src={project.homeImage} alt="" />
                                         </div>
                                         <div className="flex flex-col justify-between flex-1 p-6 bg-white">
                                             <div className="flex-1">
                                                 <p className="text-xl font-semibold text-neutral-600">{project.name}</p>
-                                                <p className="mt-3 text-base text-gray-500">{project.description}
+                                                <p className="mt-3 text-base text-gray-500">{project.description.slice(0, 150)}...
                                                 </p>
                                                 <p
                                                     onClick={() => handleNavigate(project.id)}
