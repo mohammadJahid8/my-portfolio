@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar';
-import image1 from '../iamges/candle/Screenshot_1.png';
-import image2 from '../iamges/candle/Screenshot_2.png';
-import image3 from '../iamges/candle/Screenshot_3.png';
-import { useParams } from "react-router-dom";
 import useDetail from './useDetail';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faArrowUpRightFromSquare, faLink } from '@fortawesome/free-solid-svg-icons';
 
 const ProjectDetail = () => {
     const [detail] = useDetail();
@@ -16,7 +15,9 @@ const ProjectDetail = () => {
         <>
             <Navbar backgroundHome="bg-white" />
             <div>
-                <div className="lg:px-20 md:px-6 px-4 md:py-12 py-8">
+                <h2 class="text-gray-600 text-center text-4xl font-bold hover:text-gray-500 my-6">Project Detail</h2>
+
+                <div className="lg:px-20 md:px-6 px-4 md:py-12 py-8 mb-12">
                     <div className="lg:flex items-center justify-between">
 
                         <div className="lg:w-7/12 lg:mt-0 mt-8">
@@ -33,7 +34,16 @@ const ProjectDetail = () => {
                         <div className="lg:w-1/3">
                             <h1 className="text-4xl font-semibold leading-9 text-gray-800">{name}</h1>
                             <p className="text-base leading-6 my-4 text-gray-600">{description}</p>
-                            <p><span className="text-lg font-bold">Technology Used:</span> {technology}</p>
+                            <p className='mb-3'><span className="text-lg font-bold">Technology Used:</span> {technology}</p>
+                            <a className="text-blue-600 text-lg hover:text-blue-400 pr-4" href={live}>Client
+                                <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ml-2" />
+                            </a>
+                            <a className="text-blue-600 text-lg hover:text-blue-400 pr-4" href={live}>
+
+                                Live Site</a>
+                            <a className="text-blue-600 text-lg hover:text-blue-400 pr-4" href={live}>Server
+
+                            </a>
                         </div>
                     </div>
                 </div>

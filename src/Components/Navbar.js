@@ -17,9 +17,8 @@ const Navbar = ({ backgroundHome }) => {
 
     const menuItems = (
         <>
-            <li className="">
+            <li className="hover:text-[#d87d4a]">
                 <NavLink
-
                     to="/home"
                     title="Our product"
                     style={({ isActive }) => (isActive ? activeStyle : undefined)}
@@ -28,12 +27,12 @@ const Navbar = ({ backgroundHome }) => {
                     Home
                 </NavLink>
             </li>
-            <li>
+            <li className="hover:text-[#d87d4a]">
                 <a
                     href="#about"
                     title="Our product"
 
-                    // style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                // style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 >
                     About
                 </a>
@@ -46,7 +45,7 @@ const Navbar = ({ backgroundHome }) => {
                     About
                 </NavLink> */}
             </li>
-            <li>
+            <li className="hover:text-[#d87d4a]">
                 <a
                     href="#projects"
                     aria-label="Product pricing"
@@ -64,7 +63,7 @@ const Navbar = ({ backgroundHome }) => {
                     Projects
                 </NavLink> */}
             </li>
-            <li>
+            <li className="hover:text-[#d87d4a]">
                 <NavLink
                     to="/contact"
                     aria-label="About us"
@@ -75,7 +74,7 @@ const Navbar = ({ backgroundHome }) => {
                     Resume
                 </NavLink>
             </li>
-            <li className="">
+            <li className="hover:text-[#d87d4a]">
                 <NavLink
                     to="/contact"
                     aria-label="About us"
