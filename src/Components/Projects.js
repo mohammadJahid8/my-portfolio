@@ -51,7 +51,8 @@ const Projects = () => {
                                             <div className="flex justify-center items-center mt-6">
                                                 <a href='https://assignment-12-9e0cc.web.app/' target="_blank" rel="noopener noreferrer" className="btn mr-4">Live Site</a>
                                                 <a href='https://github.com/mohammadJahid8/ventrac-manufacturer' target="_blank" rel="noopener noreferrer" className="btn mr-4">client</a>
-                                                <a href='https://github.com/mohammadJahid8/ventrac-manufac-server' target="_blank" rel="noopener noreferrer" className="btn">server</a>
+                                                {project.server &&
+                                                    <a href='https://github.com/mohammadJahid8/ventrac-manufac-server' target="_blank" rel="noopener noreferrer" className="btn">server</a>}
                                             </div>
                                         </div>
                                     </div>
