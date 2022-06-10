@@ -20,6 +20,9 @@ const Projects = () => {
     }, []);
 
 
+    // animation
+
+
     return (
         <div id='projects'>
             <section className="bg-gray-50 ">
@@ -32,9 +35,11 @@ const Projects = () => {
 
                             {
                                 projects.map(project => <>
-                                    <div className="flex flex-col overflow-hidden rounded-lg shadow-lg mb-6" key={project.id}>
+                                    <div
+                                        data-aos="fade-up" data-aos-duration="2000"
+                                        className="flex flex-col overflow-hidden rounded-lg shadow-lg mb-6" key={project.id}>
                                         <div className="flex-shrink-0">
-                                            <img className="object-cover w-full h-full" src={project.homeImage} alt="" />
+                                            <img className="object-cover w-full h-full transform transition duration-500 hover:scale-105" src={project.homeImage} alt="" />
                                         </div>
                                         <div className="flex flex-col justify-between flex-1 p-6 bg-white">
                                             <div className="flex-1">

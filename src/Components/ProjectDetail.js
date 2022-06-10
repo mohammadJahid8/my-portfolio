@@ -65,8 +65,8 @@ const ProjectDetail = () => {
                                 <img src={homeImage} alt="apartment design" className="sm:hidden block w-full" />
                             </div>
                             <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 lg:gap-8 gap-6 lg:mt-8 md:mt-6 mt-4">
-                                <img src={detailImage1} className="w-full" alt="kitchen" />
-                                <img src={detailImage2} className="w-full" alt="sitting room" />
+                                <img src={detailImage1} className="w-full" alt="" />
+                                <img src={detailImage2} className="w-full" alt="" />
                             </div>
                         </div>
 

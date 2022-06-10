@@ -65,13 +65,12 @@ const Navbar = ({ backgroundHome }) => {
             </li>
             <li className="hover:text-[#d87d4a]">
                 <NavLink
-                    to="/contact"
-                    aria-label="About us"
-                    title="About us"
-                    // class=" tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                    className={({ isActive }) => (isActive ? "active-link" : "link")}
+                    to="/blogs"
+
+                    title="Blogs"
+                    style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 >
-                    Resume
+                    Blogs
                 </NavLink>
             </li>
             <li className="hover:text-[#d87d4a]">
@@ -141,32 +140,10 @@ const Navbar = ({ backgroundHome }) => {
                             <div class="absolute top-0 left-0 w-full">
                                 <div class="p-5 bg-white border rounded shadow-sm">
                                     <div class="flex items-center justify-between mb-4">
-                                        <div>
-                                            <a
-                                                href="/"
-                                                aria-label="Company"
-                                                title="Company"
-                                                class="inline-flex items-center"
-                                            >
-                                                <svg
-                                                    class="w-8 text-deep-purple-accent-400"
-                                                    viewBox="0 0 24 24"
-                                                    strokeLinejoin="round"
-                                                    strokeWidth="2"
-                                                    strokeLinecap="round"
-                                                    strokeMiterlimit="10"
-                                                    stroke="currentColor"
-                                                    fill="none"
-                                                >
-                                                    <rect x="3" y="1" width="7" height="12" />
-                                                    <rect x="3" y="17" width="7" height="6" />
-                                                    <rect x="14" y="1" width="7" height="6" />
-                                                    <rect x="14" y="11" width="7" height="12" />
-                                                </svg>
-                                                <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                                                    Company
-                                                </span>
-                                            </a>
+                                        <div class="avatar">
+                                            <div class="w-12 rounded-full ring ring-slate-600 ring-offset-base-100 ring-offset-2">
+                                                <img src={jahid} />
+                                            </div>
                                         </div>
                                         <div>
                                             <button

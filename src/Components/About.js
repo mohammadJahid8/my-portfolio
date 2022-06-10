@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div id="about">
+        <div id="about" >
             <section class="mb-12 text-gray-600 body-font md:px-12">
                 <p className='text-gray-600 tracking-[.2rem] uppercase text-base pb-2 pt-20 text-center'>About </p>
                 <h2 className='text-gray-700 text-4xl text-center  font-bold'>Personal Information</h2>
@@ -10,7 +10,7 @@ const About = () => {
                 <div class="container flex flex-wrap px-5 py-2 mx-auto items-center">
                     <div class="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 md:mb-0 pb-10 border-b border-gray-200">
                         <h1 class="sm:text-xl text-xl font-medium title-font mb-2 text-gray-900">Hello!</h1>
-                        <h2 class="leading-relaxed text-base">My name is Mohammad Jahid and I'm a passionate Front End Web Developer using web technologies to build amazing products and focusing on solving problems for different niches and different industries using the power of technology.
+                        <h2 class="leading-relaxed text-base" >My name is Mohammad Jahid and I'm a passionate Front End Web Developer using web technologies to build amazing products and focusing on solving problems for different niches and different industries using the power of technology.
                             <br />
                             I will love to hear from you. Whether it's a project, job opportunity, or just a chat. Feel free to contact me
                         </h2>
