@@ -1,14 +1,29 @@
-import React from 'react';
-import project1 from '../iamges/project1.png'
-import project2 from '../iamges/project2.png'
-import project3 from '../iamges/project3.png'
-import project4 from '../iamges/project4.png'
-import project5 from '../iamges/project5.png'
+import React, { useEffect, useState } from 'react';
+// import project1 from '../iamges/project1.png'
+// import project2 from '../iamges/project2.png'
+// import project3 from '../iamges/project3.png'
+// import project4 from '../iamges/project4.png'
+// import project5 from '../iamges/project5.png'
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useNavigate } from "react-router-dom";
 
 
 const Projects = () => {
+    const navigate = useNavigate();
+    const [projects, setProjects] = useState([]);
+
+    const handleNavigate = (id) => {
+        navigate(`/detail/${id}`);
+    }
+
+    useEffect(() => {
+        fetch('projects.json')
+            .then(res => res.json())
+            .then(data => setProjects(data))
+    }, []);
+
+
     return (
         <div>
             <section className="bg-gray-50 ">
@@ -18,135 +33,41 @@ const Projects = () => {
                 <div className="px-4 py-12  lg:pt-16 lg:pb-24 lg:px-16 md:px-12">
                     <div className=" mx-auto">
                         <div className="grid  gap-5 mx-auto md:grid-cols-2 lg:grid-cols-3 lg:max-w-none">
-                            <div className="flex flex-col overflow-hidden rounded-lg shadow-lg">
-                                <div className="flex-shrink-0">
-                                    <img className="object-cover w-full h-48" src={project1} alt="" />
-                                </div>
-                                <div className="flex flex-col justify-between flex-1 p-6 bg-white">
-                                    <div className="flex-1">
-                                        <p className="text-xl font-semibold text-neutral-600">Ventrac</p>
-                                        <p className="mt-3 text-base text-gray-500">It is a Full-stack Tools Manufacturer Site.
-                                            Users can order products, see their own orders, and delete any order. They can confirm the order by payment method which is implemented by Stripe.
-                                            <br />
-                                            Technology Used: React Js, React Router, React Query, Tailwind CSS, Firebase Hooks, Custom Hooks, JWT, Stripe, MongoDB, and Heroku.
-                                        </p>
-                                        <a href="https://twitter.com/g_perales" className="block mt-2 text-blue-600">
-                                            More Details
-                                            <FontAwesomeIcon icon={faArrowRight} className="pl-2  " />
-                                        </a>
-                                    </div>
-                                    <div className="flex justify-center items-center mt-6">
-                                        <a href='https://assignment-12-9e0cc.web.app/' target="_blank" rel="noopener noreferrer" className="btn mr-4">Live Site</a>
-                                        <a href='https://github.com/mohammadJahid8/ventrac-manufacturer' target="_blank" rel="noopener noreferrer" className="btn mr-4">client</a>
-                                        <a href='https://github.com/mohammadJahid8/ventrac-manufac-server' target="_blank" rel="noopener noreferrer" className="btn">server</a>
-                                    </div>
-                                </div>
-                            </div>
 
+                            {
+                                projects.map(project => <>
+                                    <div className="flex flex-col overflow-hidden rounded-lg shadow-lg" key={project.id}>
+                                        <div className="flex-shrink-0">
+                                            <img className="object-cover w-full h-48" src={project.homeImage} alt="" />
+                                        </div>
+                                        <div className="flex flex-col justify-between flex-1 p-6 bg-white">
+                                            <div className="flex-1">
+                                                <p className="text-xl font-semibold text-neutral-600">{project.name}</p>
+                                                <p className="mt-3 text-base text-gray-500">{project.description}
+                                                </p>
+                                                <p
+                                                    onClick={() => handleNavigate(project.id)}
+                                                    className="hover:cursor-pointer hover:text-blue-400 block mt-2 text-blue-600">
+                                                    More Details
+                                                    <FontAwesomeIcon icon={faArrowRight} className="pl-2 " />
+                                                </p>
+                                            </div>
+                                            <div className="flex justify-center items-center mt-6">
+                                                <a href='https://assignment-12-9e0cc.web.app/' target="_blank" rel="noopener noreferrer" className="btn mr-4">Live Site</a>
+                                                <a href='https://github.com/mohammadJahid8/ventrac-manufacturer' target="_blank" rel="noopener noreferrer" className="btn mr-4">client</a>
+                                                <a href='https://github.com/mohammadJahid8/ventrac-manufac-server' target="_blank" rel="noopener noreferrer" className="btn">server</a>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                            <div className="flex flex-col overflow-hidden rounded-lg shadow-lg">
-                                <div className="flex-shrink-0">
-                                    <img className="object-cover w-full h-48" src={project4} alt="" />
-                                </div>
-                                <div className="flex flex-col justify-between flex-1 p-6 bg-white">
-                                    <div className="flex-1">
-                                        <p className="text-xl font-semibold text-neutral-600">Best Electronics</p>
-                                        <p className="mt-3 text-base text-gray-500">is a Full-stack Store Warehouse Site.This site displays some products which can be updated by an Admin. Sellers can add products and see their own products in different routes as well.Applied authentication and created  Mobile  Responsive  User  Experience.
-                                            <br />
-                                            Technology Used: React, React Router, React Bootstrap, React Hook Form, Firebase Hooks, Custom Hooks, MongoDB, and Heroku.
-                                        </p>
-                                        <a href="https://twitter.com/g_perales" className="block mt-2 text-blue-600">
-                                            More Details
-                                            <FontAwesomeIcon icon={faArrowRight} className="pl-2  " />
-                                        </a>
-                                    </div>
-                                    <div className="flex justify-center items-center mt-6">
-                                        <a href='https://assignment-11-85553.web.app/' target="_blank" rel="noopener noreferrer" className="btn mr-4">Live Site</a>
-                                        <a href='https://github.com/mohammadJahid8/best-electronics' target="_blank" rel="noopener noreferrer" className="btn mr-4">client</a>
-                                        <a href='https://github.com/mohammadJahid8/best-electronics-server' target="_blank" rel="noopener noreferrer" className="btn">server</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="flex flex-col overflow-hidden rounded-lg shadow-lg">
-                                <div className="flex-shrink">
-                                    <img className="object-cover w-full h-48" src={project3} alt="" />
-                                </div>
-                                <div className="flex flex-col justify-between flex-1 p-6 bg-white">
-                                    <div className="flex-1">
-                                        <p className="text-xl font-semibold text-neutral-600">Peters Photography</p>
-                                        <p className="mt-3 text-base text-gray-500">is a Personal Photography Site. This site represents a photographer and his services.Users need to Sign/Signup to Checkout any services.	Created mobile  Responsive  User  Experience.
-                                            <br />
-                                            Technology Used: React, React Bootstrap, Firebase hooks, Toastify.
-                                        </p>
-                                        <a href="https://twitter.com/g_perales" className="block mt-2 text-blue-600">
-                                            More Details
-                                            <FontAwesomeIcon icon={faArrowRight} className="pl-2  " />
-                                        </a>
-                                    </div>
-                                    <div className="flex justify-center items-center mt-6">
-                                        <a href='https://assignment-10-5eb12.web.app/' target="_blank" rel="noopener noreferrer" className="btn mr-4">Live Site</a>
-                                        <a href='https://github.com/mohammadJahid8/peters-photography' target="_blank" rel="noopener noreferrer" className="btn mr-4">Client</a>
-                                        <a href='https://github.com/mohammadJahid8/peters-photography' target="_blank" rel="noopener noreferrer" className="btn">Server</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="flex flex-col overflow-hidden rounded-lg shadow-lg">
-                                <div className="flex-shrink-0">
-                                    <img className="object-cover w-full h-48" src={project5} alt="" />
-                                </div>
-                                <div className="flex flex-col justify-between flex-1 p-6 bg-white">
-                                    <div className="flex-1">
-                                        <p className="text-xl font-semibold text-neutral-600">City Hall Convention Center</p>
-                                        <p className="mt-3 text-base text-gray-500">City hall is a convention center. This site is for the visitors to see the events and the speakers.All the event package is displayed in the home page.
-                                            <br />
-                                            Technology Used: Html, css, bootstrap.
-                                        </p>
-                                        <a href="https://twitter.com/g_perales" className="block mt-2 text-blue-600">
-                                            More Details
-                                            <FontAwesomeIcon icon={faArrowRight} className="pl-2  " />
-                                        </a>
-                                    </div>
-                                    <div className="flex justify-center items-center mt-6">
-                                        <a href='https://xenodochial-haibt-4a1234.netlify.app/' target="_blank" rel="noopener noreferrer" className="btn mr-4">Live Site</a>
-                                        <a href='https://github.com/mohammadJahid8/convention-center' target="_blank" rel="noopener noreferrer" className="btn mr-4">client</a>
-                                        <a href='https://github.com/mohammadJahid8/convention-center' target="_blank" rel="noopener noreferrer" className="btn">server</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="flex flex-col overflow-hidden rounded-lg shadow-lg">
-                                <div className="flex-shrink-0">
-                                    <img className="object-cover w-full h-48" src={project2} alt="" />
-                                </div>
-                                <div className="flex flex-col justify-between flex-1 p-6 bg-white">
-                                    <div className="flex-1">
-
-                                        <p className="text-xl font-semibold text-neutral-600">Classic Candles</p>
-                                        <p className="mt-3 text-base text-gray-500">Classic Candle is a candle review site. All the reviews of the customer will display in the home page.
-                                            <br />
-                                            Technology Used: Html, css, bootstrap.
-                                        </p>
-
-                                        <a href="https://twitter.com/g_perales" className="block mt-2 text-blue-600">
-                                            More Details
-                                            <FontAwesomeIcon icon={faArrowRight} className="pl-2  " />
-                                        </a>
-                                    </div>
-                                    <div className="flex justify-center items-center mt-6">
-                                        <a href="https://flourishing-creponne-d381f1.netlify.app/" target="_blank" rel="noopener noreferrer" className="btn mr-4">Live Site</a>
-                                        <a href="https://github.com/mohammadJahid8/product-analysis-site" target="_blank" rel="noopener noreferrer" className="btn mr-4">Client</a>
-                                        <a href="https://github.com/mohammadJahid8/product-analysis-site" target="_blank" rel="noopener noreferrer" className="btn">Server</a>
-                                    </div>
-                                </div>
-                            </div>
-
+                                </>)
+                            }
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
 
-        </div>
+        </div >
     );
 };
 
