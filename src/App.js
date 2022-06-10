@@ -8,6 +8,7 @@ import Blogs from './Components/Blogs';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import About from './Components/About';
 
 function App() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/detail/:id" element={<ProjectDetail />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
 

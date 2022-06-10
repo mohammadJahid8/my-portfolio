@@ -74,13 +74,19 @@ const ProjectDetail = () => {
                             <h1 className="text-4xl font-semibold leading-9 text-gray-800">{name}</h1>
                             <p className="text-base leading-6 my-4 text-gray-600">{description}</p>
                             <p className='mb-3'><span className="text-lg font-bold">Technology Used:</span> {technology}</p>
-                            <a className="text-blue-600 text-lg hover:text-blue-400 pr-4" href={live}>Live Site
+                            <a
+                                target="_blank" rel="noopener noreferrer"
+                                className="text-blue-600 text-lg hover:text-blue-400 pr-4" href={live}>Live Site
                                 <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ml-2" />
                             </a>
-                            <a className="text-blue-600 text-lg hover:text-blue-400 pr-4" href={client}>
+                            <a
+                                target="_blank" rel="noopener noreferrer"
+                                className="text-blue-600 text-lg hover:text-blue-400 pr-4" href={client}>
 
                                 Client</a>
-                            {server && <a className="text-blue-600 text-lg hover:text-blue-400 pr-4" href={server}>Server
+                            {server && <a
+                                target="_blank" rel="noopener noreferrer"
+                                className="text-blue-600 text-lg hover:text-blue-400 pr-4" href={server}>Server
                             </a>}
                         </div>
                     </div>

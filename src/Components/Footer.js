@@ -7,21 +7,39 @@ const Footer = () => {
         <div>
             <div className="bg-gray-900 text-slate-50 px-4 py-10">
                 <div className="flex flex-col items-center justify-center">
-                
+
 
                     <div className="flex items-center gap-x-8 mt-6">
                         <div className="cursor-pointer">
+                            <a
+                                target="_blank" rel="noopener noreferrer"
+                                href="https://www.facebook.com/zahid.814">
+                                <FontAwesomeIcon icon={faFacebook} className="fill-current text-gray-300 hover:text-gray-500  h-7" />
+                            </a>
+                        </div>
+                        <div className="cursor-pointer">
+                            <a
+                                target="_blank" rel="noopener noreferrer"
+                                href="https://www.instagram.com/jahidishere/">
+                                <FontAwesomeIcon icon={faInstagram} className="fill-current text-gray-300 hover:text-gray-500  h-7" />
+                            </a>
 
-                            <FontAwesomeIcon icon={faFacebook} className="fill-current text-gray-300 hover:text-gray-500  h-7" />
                         </div>
                         <div className="cursor-pointer">
-                            <FontAwesomeIcon icon={faInstagram} className="fill-current text-gray-300 hover:text-gray-500  h-7" />
+                            <a
+                                target="_blank" rel="noopener noreferrer"
+                                href="https://www.linkedin.com/in/mohammad-jahid-3598b6229/">
+                                <FontAwesomeIcon icon={faLinkedin} className="fill-current text-gray-300 hover:text-gray-500  h-7" />
+                            </a>
+
                         </div>
                         <div className="cursor-pointer">
-                            <FontAwesomeIcon icon={faLinkedin} className="fill-current text-gray-300 hover:text-gray-500  h-7" />
-                        </div>
-                        <div className="cursor-pointer">
-                            <FontAwesomeIcon icon={faGithub} className="fill-current text-gray-300 hover:text-gray-500  h-7" />
+                            <a
+                                target="_blank" rel="noopener noreferrer"
+                                href="https://github.com/mohammadJahid8">
+                                <FontAwesomeIcon icon={faGithub} className="fill-current text-gray-300 hover:text-gray-500  h-7" />
+                            </a>
+
                         </div>
                     </div>
                     <div className="flex items-center mt-6">

@@ -39,7 +39,7 @@ const Projects = () => {
                                         data-aos="fade-up" data-aos-duration="2000"
                                         className="flex flex-col overflow-hidden rounded-lg shadow-lg mb-6" key={project.id}>
                                         <div className="flex-shrink-0">
-                                            <img className="object-cover w-full h-full transform transition duration-500 hover:scale-105" src={project.homeImage} alt="" />
+                                            <img className="object-cover w-full h-full  transition duration-500 hover:scale-105" src={project.homeImage} alt="" />
                                         </div>
                                         <div className="flex flex-col justify-between flex-1 p-6 bg-white">
                                             <div className="flex-1">
@@ -54,10 +54,10 @@ const Projects = () => {
                                                 </p>
                                             </div>
                                             <div className="flex justify-center items-center mt-6">
-                                                <a href='https://assignment-12-9e0cc.web.app/' target="_blank" rel="noopener noreferrer" className="btn mr-4">Live Site</a>
-                                                <a href='https://github.com/mohammadJahid8/ventrac-manufacturer' target="_blank" rel="noopener noreferrer" className="btn mr-4">client</a>
+                                                <a href={project.live} target="_blank" rel="noopener noreferrer" className="btn mr-4">Live Site</a>
+                                                <a href={project.client} target="_blank" rel="noopener noreferrer" className="btn mr-4">client</a>
                                                 {project.server &&
-                                                    <a href='https://github.com/mohammadJahid8/ventrac-manufac-server' target="_blank" rel="noopener noreferrer" className="btn">server</a>}
+                                                    <a href={project.server} target="_blank" rel="noopener noreferrer" className="btn">server</a>}
                                             </div>
                                         </div>
                                     </div>
