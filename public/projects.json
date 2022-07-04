@@ -36,6 +36,17 @@
         "detailImage2": "https://i.ibb.co/1n4mnHW/Screenshot-3.png"
     },
     {
+        "id": 2,
+        "name": "Journal e-commerce",
+        "description": "Journal is a e-commerce site which is made by front end technology. This site consists products of many catagories like electronics, womens and mens clothing, and many more.",
+        "live": "https://flourishing-creponne-d381f1.netlify.app/",
+        "client": "https://github.com/mohammadJahid8/product-analysis-site",
+        "technology": "React, React Router, Tailwind CSS,firebase",
+        "homeImage": "https://i.ibb.co/HY81TgS/Screenshot-4.png",
+        "detailImage1": "https://i.ibb.co/Jt7637z/Screenshot-5.png",
+        "detailImage2": "https://i.ibb.co/hR7TG0S/Screenshot-6.png"
+    },
+    {
         "id": 5,
         "name": "Peters Photography",
         "description": "is a Personal Photography Site.This site represents a photographer and his services Users need to Sign/Signup to Checkout any services. Created mobile  Responsive  User  Experience...",
@@ -45,17 +56,6 @@
         "homeImage": "https://i.ibb.co/cgX94S8/Screenshot-1.png",
         "detailImage1": "https://i.ibb.co/80MRnXn/Screenshot-2.png",
         "detailImage2": "https://i.ibb.co/5j6xpvk/Screenshot-3.png"
-    },
-    {
-        "id": 2,
-        "name": "Classic Candles",
-        "description": "Classic Candle is a candle analysis site. All the reviews of the customer will display in the home page. There is also a route which display some chart wich has been created by React Recharts",
-        "live": "https://flourishing-creponne-d381f1.netlify.app/",
-        "client": "https://github.com/mohammadJahid8/product-analysis-site",
-        "technology": "React, React Router, Bootstrap,React Recharts, Netlify",
-        "homeImage": "https://i.ibb.co/ZLkPxWG/Screenshot-1.png",
-        "detailImage1": "https://i.ibb.co/Zhrx0mX/Screenshot-2.png",
-        "detailImage2": "https://i.ibb.co/g78Wwd1/Screenshot-3.png"
     },
     {
         "id": 4,

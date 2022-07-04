@@ -2,7 +2,7 @@ import React from 'react';
 import banner from '../iamges/banner.png'
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import pdf from '../Mohammad-Jahid-Resume2.pdf'
+import pdf from '../Jahids-Resume.pdf'
 // import bannerMobile from '../../images/home/mobile/image-header.jpg'
 
 const Banner = () => {

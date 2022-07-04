@@ -4,14 +4,29 @@ import useDetail from './useDetail';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare, faLink } from '@fortawesome/free-solid-svg-icons';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 const ProjectDetail = () => {
-    const [detail] = useDetail();
+    // const [detail] = useDetail();
+    const [detail, setDetail] = useState({});
     // console.log(detail);
     const { name, description, detailImage1, detailImage2, homeImage, live, client, server, technology } = detail;
 
     let navigate = useNavigate(); //for back button
+
+    // console.log(detail);
+    const { id } = useParams();
+    console.log(id);
+
+    useEffect(() => {
+        fetch('/projects.json')
+            .then(res => res.json())
+            .then(data => {
+                const project = data.find(project => project.id == id);
+                setDetail(project);
+            });
+    }, [id]);
+
 
     return (
         <>

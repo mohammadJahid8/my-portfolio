@@ -37,7 +37,7 @@ const Projects = () => {
                                 projects.map(project => <>
                                     <div
                                         data-aos="fade-up" data-aos-duration="2000"
-                                        className="flex flex-col overflow-hidden rounded-lg shadow-lg mb-6" key={project.id}>
+                                        className="flex flex-col overflow-hidden rounded-lg shadow-lg mb-6 " key={project.id}>
                                         <div className="flex-shrink-0">
                                             <img className="object-cover w-full h-full  transition duration-500 hover:scale-105" src={project.homeImage} alt="" />
                                         </div>
